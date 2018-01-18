@@ -1,0 +1,717 @@
+{
+    "rooms": {
+        "_2317": {
+            "name": "Foothills",
+            "description": ["You find yourself standing at the base of an enormous mountain.  At its base to the north, there is a massive doorway.  A sign nearby reads \"Keep out!  Definitely no treasure within!\""],
+            "exits": {
+                "doorway": "_2327",
+                "south": "_2322"
+            },
+            "objects": ["tablet"],
+            "id": "_2317",
+            "lastTried": "doorway"
+        },
+        "_2327": {
+            "name": "Dark cave",
+            "description": ["This seems to be the mouth of a deep cave.  As you peer north into the darkness, you think you hear the echoes of bats deeper within."],
+            "exits": {
+                "north": "_2332",
+                "south": "_2317"
+            },
+            "id": "_2327",
+            "lastTried": "north"
+        },
+        "_2332": {
+            "name": "Dark cave",
+            "description": ["The cave is somewhat narrow here, and the light from the doorway to the south is quite dim."],
+            "exits": {
+                "north": "_2337",
+                "south": "_2327"
+            },
+            "id": "_2332",
+            "lastTried": "north"
+        },
+        "_2322": {
+            "name": "Foothills",
+            "description": ["As you begin to leave, you feel the urge for adventure pulling you back..."],
+            "exits": {
+                "north": "_2317"
+            },
+            "id": "_2322",
+            "lastTried": "north"
+        },
+        "_2337": {
+            "name": "Dark cave",
+            "description": ["The cave acoustics dramatically change as you find yourself at a legde above a large chasm.  There is barely enough light here to notice a rope bridge leading out into the dark emptiness."],
+            "exits": {
+                "bridge": "_2342",
+                "south": "_2327"
+            },
+            "id": "_2337",
+            "lastTried": "bridge"
+        },
+        "_2342": {
+            "name": "Rope bridge",
+            "description": ["This rope bridge creaks as you walk along it.  You aren't sure how old it is, or whether it can even support your weight."],
+            "exits": {
+                "continue": "_2347",
+                "back": "_2337"
+            },
+            "id": "_2342",
+            "lastTried": "continue"
+        },
+        "_2347": {
+            "name": "Falling through the air!",
+            "description": ["As you continue along the bridge, it snaps!  You try to grab the bridge, but it evades your grasp in the darkness.  You are plummeting quickly downward into the chasm..."],
+            "exits": {
+                "down": "_2352"
+            },
+            "id": "_2347",
+            "lastTried": "down"
+        },
+        "_2352": {
+            "name": "Moss cavern",
+            "description": ["You are standing in a large cavern full of bioluminescent moss.  It must have broken your fall!  The cavern extends to the east and west; at the west end, you think you see a passage leading out of the cavern."],
+            "exits": {
+                "west": "_2362",
+                "east": "_2357"
+            },
+            "id": "_2352",
+            "lastTried": "west"
+        },
+        "_2362": {
+            "name": "Moss cavern",
+            "description": ["You are standing in a large cavern full of bioluminescent moss.  The cavern extends to the east.  There is a crevise in the rocks which opens into a passage."],
+            "exits": {
+                "east": "_2352",
+                "passage": "_2367"
+            },
+            "id": "_2362",
+            "lastTried": "passage"
+        },
+        "_2357": {
+            "name": "Moss cavern",
+            "description": ["You are standing in a large cavern full of bioluminescent moss.  The cavern extends to the west."],
+            "exits": {
+                "west": "_2352"
+            },
+            "objects": ["empty lantern"],
+            "id": "_2357",
+            "lastTried": "west"
+        },
+        "_2367": {
+            "name": "Passage",
+            "description": ["You are in a crevise on the west wall of the moss cavern.  A dark passage leads further west.  There is a ladder here which leads down into a smaller, moss-filled cavern below."],
+            "exits": {
+                "cavern": "_2362",
+                "ladder": "_2377",
+                "darkness": "_2372"
+            },
+            "id": "_2367",
+            "lastTried": "darkness"
+        },
+        "_2377": {
+            "name": "Twisty passages",
+            "description": ["You are in a maze of twisty little passages, all dimly lit by more bioluminescent moss.  There is a ladder here leading up."],
+            "exits": {
+                "ladder": "_2367",
+                "north": "_2382",
+                "south": "_2387",
+                "east": "_2392",
+                "west": "_2397"
+            },
+            "id": "_2377",
+            "lastTried": "ladder"
+        },
+        "_2387": {
+            "name": "Twisty passages",
+            "description": ["You are in a maze of little twisty passages, all alike."],
+            "exits": {
+                "north": "_2377",
+                "south": "_2382",
+                "east": "_2387"
+            },
+            "id": "_2387",
+            "lastTried": "south"
+        },
+        "_2397": {
+            "name": "Twisty passages",
+            "description": ["You are in a little maze of twisty passages, all alike."],
+            "exits": {
+                "north": "_2397",
+                "south": "_2402",
+                "east": "_2377"
+            },
+            "id": "_2397",
+            "lastTried": "east"
+        },
+        "_2402": {
+            "name": "Twisty passages",
+            "description": ["You are in a twisty alike of little passages, all maze.", "The east passage appears very dark; you feel likely to be eaten by a Grue."],
+            "exits": {
+                "north": "_2417",
+                "south": "_2382",
+                "west": "_2387",
+                "east": "_2422"
+            },
+            "id": "_2402",
+            "lastTried": "east"
+        },
+        "_2417": {
+            "name": "Twisty passages",
+            "description": ["You are in a maze of twisty little passages, all alike."],
+            "exits": {
+                "west": "_2377"
+            },
+            "objects": ["can"],
+            "id": "_2417",
+            "lastTried": "west"
+        },
+        "_2392": {
+            "name": "Twisty passages",
+            "description": ["You are in a maze of alike little passages, all twisty.", "The passage to the east looks very dark; you think you hear a Grue."],
+            "exits": {
+                "north": "_2407",
+                "south": "_2392",
+                "west": "_2377",
+                "east": "_2422"
+            },
+            "id": "_2392",
+            "lastTried": "west"
+        },
+        "_2382": {
+            "name": "Twisty passages",
+            "description": ["You are in a twisty maze of little passages, all alike."],
+            "exits": {
+                "north": "_2387",
+                "south": "_2377",
+                "west": "_2382"
+            },
+            "id": "_2382",
+            "lastTried": "south"
+        },
+        "_2372": {
+            "name": "Passage",
+            "description": ["You feel that your light source is more than sufficient to keep grues away."],
+            "exits": {
+                "continue": "_2427",
+                "back": "_2367"
+            },
+            "id": "_2372",
+            "lastTried": "continue"
+        },
+        "_2427": {
+            "name": "Dark passage",
+            "description": ["You are in a narrow passage.  There is darkness to the west, but you can barely see a glowing opening to the east."],
+            "exits": {
+                "west": "_2432",
+                "east": "_2372"
+            },
+            "id": "_2427",
+            "lastTried": "west"
+        },
+        "_2432": {
+            "name": "Dark passage",
+            "description": ["You are in a dark, narrow passage."],
+            "exits": {
+                "east": "_2427",
+                "west": "_2437"
+            },
+            "id": "_2432",
+            "lastTried": "west"
+        },
+        "_2437": {
+            "name": "Dark passage",
+            "description": ["You are in a dark, narrow passage."],
+            "exits": {
+                "east": "_2432",
+                "west": "_2442"
+            },
+            "id": "_2437",
+            "lastTried": "west"
+        },
+        "_2442": {
+            "name": "Dark passage",
+            "description": ["You are in a dark, narrow passage.  To the west, you spot some vegetation where the passage expands."],
+            "exits": {
+                "east": "_2437",
+                "west": "_2447"
+            },
+            "id": "_2442",
+            "lastTried": "west"
+        },
+        "_2447": {
+            "name": "Ruins",
+            "description": ["You stand in a large cavern with a huge ruin to the north, overgrown by plant life.  There is a large stone archway to the north acting as the doorway to the ruined complex.  A crevice in the rock to the east leads to an alarmingly dark passageway."],
+            "exits": {
+                "east": "_2442",
+                "north": "_2452"
+            },
+            "id": "_2447",
+            "lastTried": "north"
+        },
+        "_2407": {
+            "name": "Twisty passages",
+            "description": ["You are in a maze of alike twisty passages, all little."],
+            "exits": {
+                "north": "_2387",
+                "east": "_2382",
+                "south": "_2407"
+            },
+            "id": "_2407",
+            "lastTried": "east"
+        },
+        "_2422": {
+            "name": "Twisty passages",
+            "description": ["You are in a twisty maze of little passages, all alike."],
+            "exits": {
+                "north": "_2387",
+                "south": "_2382"
+            },
+            "id": "_2422",
+            "lastTried": "south"
+        },
+        "_2452": {
+            "name": "Ruins",
+            "description": ["You are in the once-opulent foyer of a massive ruined complex.  There is a door to the south leading to the overgrowth outside and stairs to the north which lead into a larger hall."],
+            "exits": {
+                "north": "_2457",
+                "south": "_2447"
+            },
+            "objects": ["red coin"],
+            "id": "_2452",
+            "lastTried": "north"
+        },
+        "_2457": {
+            "name": "Ruins",
+            "description": ["You stand in the massive central hall of these ruins.  The walls are crumbling, and vegetation has clearly taken over.  Rooms are attached in all directions.  There is a strange monument in the center of the hall with circular slots and unusual symbols.  It reads:", "_ + _ * _^2 + _^3 - _ = 399"],
+            "exits": {
+                "north": "_2463",
+                "south": "_2452",
+                "east": "_2468",
+                "west": "_2478"
+            },
+            "id": "_2457",
+            "lastTried": "north"
+        },
+        "_2478": {
+            "name": "Ruins",
+            "description": ["You find yourself in what was once the living quarters for the complex.  Many smaller rooms which once had walls to divide them now lay in disarray.  There is a staircase up here."],
+            "exits": {
+                "up": "_2483",
+                "east": "_2457"
+            },
+            "objects": ["blue coin"],
+            "id": "_2478",
+            "lastTried": "east"
+        },
+        "_2468": {
+            "name": "Ruins",
+            "description": ["You stand in what seems to have once been a dining hall; broken tables and pottery are scattered everywhere.  A staircase here leads down."],
+            "exits": {
+                "down": "_2473",
+                "west": "_2457"
+            },
+            "objects": ["concave coin"],
+            "id": "_2468",
+            "lastTried": "west"
+        },
+        "_2648": {
+            "name": "Fumbling around in the darkness",
+            "description": ["Without a source of light, you have become hopelessly lost and are fumbling around in the darkness."],
+            "exits": {
+                "forward": "_2653",
+                "back": "_2653"
+            },
+            "id": "_2648",
+            "deadEnd": true,
+            "lastTried": "back"
+        },
+        "_2653": {
+            "name": "Fumbling around in the darkness",
+            "description": ["You can't seem to find your way.  However, you do think you hear low growling in the distance."],
+            "exits": {
+                "run": "_2658",
+                "investigate": "_2658"
+            },
+            "id": "_2653",
+            "deadEnd": true,
+            "lastTried": "investigate"
+        },
+        "_2658": {
+            "name": "Panicked and lost",
+            "description": ["The growling is getting louder.  Did I mention there are Grues down here?"],
+            "exits": {
+                "run": 0,
+                "wait": 0,
+                "hide": 0
+            },
+            "id": "_2658",
+            "deadEnd": true,
+            "lastTried": "hide"
+        },
+        "_2473": {
+            "name": "Ruins",
+            "description": ["This seems to be a kitchen; there are brick stoves and shelves along the wall.  Everything here has fallen into disrepair."],
+            "exits": {
+                "up": "_2468"
+            },
+            "objects": ["corroded coin"],
+            "id": "_2473",
+            "lastTried": "up"
+        },
+        "_2483": {
+            "name": "Ruins",
+            "description": ["This was long ago a lavish throne room.  Dried-up fountains and crumbling statues line the walls, and the carved stone throne in the center of the room is falling apart."],
+            "exits": {
+                "down": "_2478"
+            },
+            "objects": ["shiny coin"],
+            "id": "_2483",
+            "lastTried": "down"
+        },
+        "_2463": {
+            "name": "Ruins",
+            "description": ["Because it has been so well-protected, this room hardly shows signs of decay.  The walls are covered in elaborate murals and decorated with precious metals and stones."],
+            "exits": {
+                "south": "_2457"
+            },
+            "objects": ["teleporter"],
+            "id": "_2463"
+        },
+        "_2488": {
+            "name": "Synacor Headquarters",
+            "description": ["You stand in the lobby of what appears to be a really fun place to work!  Sadly, there doesn't seem to be anyone around at the moment, so you make a note to call them later.  The bookshelf here looks like it might have something interesting in it, though."],
+            "exits": {
+                "outside": "_2493"
+            },
+            "objects": ["business card", "strange book"],
+            "id": "_2488",
+            "lastTried": "outside"
+        },
+        "_2493": {
+            "name": "Synacor Headquarters",
+            "description": ["It's a warm, sunny day!  While the breeze from Lake Erie is certainly refreshing, you don't see anything here that will help you with your quest."],
+            "exits": {
+                "inside": "_2488"
+            },
+            "id": "_2493",
+            "lastTried": "inside"
+        },
+        "_2498": {
+            "name": "Beach",
+            "description": ["This is a sandy beach in a cove on some tropical island.  It is raining.  The ocean is to your south, and heavy foliage is to your north; the beach extends west and east."],
+            "exits": {
+                "west": "_2503",
+                "east": "_2508",
+                "north": "_2513"
+            },
+            "id": "_2498",
+            "lastTried": "north"
+        },
+        "_2508": {
+            "name": "Beach",
+            "description": ["This is a sandy beach in a cove on some tropical island.  It is raining.  The steep cove embankment to your east blocks your path, and the ocean waters here look unsafe.  The beach extends to the west, and there is dense foliage to the north."],
+            "exits": {
+                "west": "_2498",
+                "north": "_2518"
+            },
+            "id": "_2508",
+            "lastTried": "west"
+        },
+        "_2518": {
+            "name": "Tropical Island",
+            "description": ["The east embankment of the cove towers over you.  It produces a small waterfall here which cascades excitedly into a pool."],
+            "exits": {
+                "north": "_2523",
+                "south": "_2508",
+                "west": "_2513"
+            },
+            "id": "_2518",
+            "lastTried": "south"
+        },
+        "_2503": {
+            "name": "Beach",
+            "description": ["This is a sandy beach in a cove on some tropical island.  It is raining.  To your west is an embankment of the cove which looks too steep to climb.  The beach extends to the east, and there is dense foliage to the north.  The ocean to the south seems uninviting."],
+            "exits": {
+                "east": "_2498",
+                "north": "_2513"
+            },
+            "id": "_2503",
+            "lastTried": "east"
+        },
+        "_2513": {
+            "name": "Tropical Island",
+            "description": ["The large trees here seem to be protecting you from the rain.  As you push through the undergrowth, you can hear birds chirping overhead.  There is a steep rock face to your west blocking your path."],
+            "exits": {
+                "north": "_2523",
+                "south": "_2498",
+                "east": "_2518"
+            },
+            "id": "_2513",
+            "lastTried": "north"
+        },
+        "_2523": {
+            "name": "Tropical Island",
+            "description": ["The embankment of the cove come toegher here to your east and west.  Between these tall rock faces, there is a narrow, overgrown path leading north.  You hear waves lapping up on a beach through the dense vegetation to your south."],
+            "exits": {
+                "north": "_2528",
+                "south": "_2513"
+            },
+            "id": "_2523",
+            "lastTried": "north"
+        },
+        "_2528": {
+            "name": "Tropical Island",
+            "description": ["You are on a narrow path between two steep rock faces which look like they have been here for thousands of years.  Rain trickles down through the vegetation and moss, and through the leaves you can occasionally see a sliver of light hundreds of feet above you where the rock walls end."],
+            "exits": {
+                "north": "_2533",
+                "south": "_2523"
+            },
+            "id": "_2528",
+            "lastTried": "north"
+        },
+        "_2533": {
+            "name": "Tropical Island",
+            "description": ["The narrow path slopes downward to the north and leads to the mouth of a small cave.  A sign nearby reads \"Treasure Vault Access\", but different handwriting has crossed this out and written \"Lair of Horrible Monster!  All non-pirates keep out!\"."],
+            "exits": {
+                "north": "_2538",
+                "south": "_2528"
+            },
+            "id": "_2533",
+            "lastTried": "north"
+        },
+        "_2538": {
+            "name": "Tropical Cave",
+            "description": ["You stand at the entrance to a natural cave which looks like it hasn't been visited in quite some time.  Light pours in through the opening to the south, while fireflies light the path further into the cave to the north."],
+            "exits": {
+                "north": "_2543",
+                "south": "_2533"
+            },
+            "id": "_2538",
+            "lastTried": "north"
+        },
+        "_2543": {
+            "name": "Tropical Cave",
+            "description": ["Fireflies slowly drift around you and light the tunnel, which seems to get brighter to the south, but dimmer to the north."],
+            "exits": {
+                "north": "_2548",
+                "south": "_2538"
+            },
+            "id": "_2543",
+            "lastTried": "north"
+        },
+        "_2548": {
+            "name": "Tropical Cave",
+            "description": ["The cave is a little wider here.  You find the cobweb-encrusted remains of a small camp, and although you don't suspect the broken pieces of tables and chairs will prove useful to your quest, the fireflies seem to like using the debris as a shelter.  A passageway leads north and south, and there is an alcove to the east."],
+            "exits": {
+                "north": "_2558",
+                "south": "_2543",
+                "east": "_2553"
+            },
+            "id": "_2548",
+            "lastTried": "north"
+        },
+        "_2553": {
+            "name": "Tropical Cave Alcove",
+            "description": ["At the back of this alcove, there is a small table, a chair, and a broken lantern.  It looks like this space was used much more recently than the camp to the west."],
+            "exits": {
+                "west": "_2548"
+            },
+            "objects": ["journal"],
+            "id": "_2553",
+            "lastTried": "west"
+        },
+        "_2558": {
+            "name": "Tropical Cave",
+            "description": ["This tunnel slopes deeper underground to the north, but the fireflies are all around to light your path."],
+            "exits": {
+                "north": "_2623",
+                "south": "_2548"
+            },
+            "id": "_2558",
+            "lastTried": "north"
+        },
+        "_2623": {
+            "name": "Vault Antechamber",
+            "description": ["You are in the antechamber to a grid of rooms that control the door to the vault.  You notice the number '22' is carved into the orb's pedestal."],
+            "exits": {
+                "north": "_2603",
+                "east": "_2628",
+                "south": "_2558"
+            },
+            "objects": ["orb"],
+            "id": "_2623",
+            "lastTried": "north"
+        },
+        "_2628": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting a '-' symbol."],
+            "exits": {
+                "north": "_2608",
+                "east": "_2633",
+                "west": "_2623"
+            },
+            "id": "_2628",
+            "lastTried": "west"
+        },
+        "_2608": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting the number '4'."],
+            "exits": {
+                "north": "_2588",
+                "east": "_2613",
+                "south": "_2628",
+                "west": "_2603"
+            },
+            "id": "_2608",
+            "lastTried": "west"
+        },
+        "_2613": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting a '-' symbol."],
+            "exits": {
+                "north": "_2593",
+                "east": "_2618",
+                "south": "_2633",
+                "west": "_2608"
+            },
+            "id": "_2613",
+            "lastTried": "west"
+        },
+        "_2593": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting the number '11'."],
+            "exits": {
+                "north": "_2573",
+                "east": "_2598",
+                "south": "_2613",
+                "west": "_2588"
+            },
+            "id": "_2593",
+            "lastTried": "west"
+        },
+        "_2588": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting a '*' symbol."],
+            "exits": {
+                "north": "_2568",
+                "east": "_2593",
+                "south": "_2608",
+                "west": "_2583"
+            },
+            "id": "_2588",
+            "lastTried": "west"
+        },
+        "_2603": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting a '+' symbol."],
+            "exits": {
+                "north": "_2583",
+                "east": "_2608",
+                "south": "_2623"
+            },
+            "id": "_2603",
+            "lastTried": "east"
+        },
+        "_2583": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting the number '4'."],
+            "exits": {
+                "north": "_2563",
+                "east": "_2588",
+                "south": "_2603"
+            },
+            "id": "_2583",
+            "lastTried": "south"
+        },
+        "_2563": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting a '*' symbol."],
+            "exits": {
+                "east": "_2568",
+                "south": "_2583"
+            },
+            "id": "_2563",
+            "lastTried": "south"
+        },
+        "_2568": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting the number '8'."],
+            "exits": {
+                "east": "_2573",
+                "south": "_2588",
+                "west": "_2563"
+            },
+            "id": "_2568",
+            "lastTried": "south"
+        },
+        "_2618": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting the number '18'."],
+            "exits": {
+                "north": "_2598",
+                "south": "_2638",
+                "west": "_2613"
+            },
+            "id": "_2618",
+            "lastTried": "south"
+        },
+        "_2598": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting a '*' symbol."],
+            "exits": {
+                "north": "_2578",
+                "south": "_2618",
+                "west": "_2593"
+            },
+            "id": "_2598",
+            "lastTried": "north"
+        },
+        "_2638": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting a '*' symbol."],
+            "exits": {
+                "north": "_2618",
+                "west": "_2633"
+            },
+            "id": "_2638",
+            "lastTried": "west"
+        },
+        "_2573": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting a '-' symbol."],
+            "exits": {
+                "east": "_2578",
+                "south": "_2593",
+                "west": "_2568"
+            },
+            "id": "_2573",
+            "lastTried": "west"
+        },
+        "_2578": {
+            "name": "Vault Door",
+            "description": ["You stand before the door to the vault; it has a large '30' carved into it.  Affixed to the wall near the door, there is a running hourglass which never seems to run out of sand.", "The floor of this room is a large mosaic depicting the number '1'."],
+            "exits": {
+                "south": "_2598",
+                "west": "_2573",
+                "vault": 0
+            },
+            "id": "_2578",
+            "lastTried": "west"
+        },
+        "_2633": {
+            "name": "Vault Lock",
+            "description": ["You are in a grid of rooms that control the door to the vault.", "The floor of this room is a large mosaic depicting the number '9'."],
+            "exits": {
+                "north": "_2613",
+                "east": "_2638",
+                "west": "_2628"
+            },
+            "id": "_2633",
+            "lastTried": "north"
+        }
+    },
+    "ids": {},
+    "nextId": 1
+}
